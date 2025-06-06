@@ -1,0 +1,155 @@
+/* Reset some default browser styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #f7fafc;
+}
+
+/* Responsive container for the app */
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* Utility classes for flex layouts */
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+/* Card styles */
+.bg-white {
+  background: #fff;
+}
+.p-8 {
+  padding: 2rem;
+}
+.rounded {
+  border-radius: 0.5rem;
+}
+.shadow {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Sidebar for past conversations */
+.w-64 {
+  width: 16rem;
+}
+.bg-gray-50 {
+  background: #f9fafb;
+}
+.p-4 {
+  padding: 1rem;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.border-r {
+  border-right: 1px solid #e5e7eb;
+}
+
+/* Chat area */
+.h-screen {
+  height: 100vh;
+}
+.text-lg {
+  font-size: 1.125rem;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.rounded {
+  border-radius: 0.5rem;
+}
+.shadow {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+}
+.text-gray-500 {
+  color: #6b7280;
+}
+.text-gray-600 {
+  color: #4b5563;
+}
+
+/* Product card */
+.h-32 {
+  height: 8rem;
+}
+.object-cover {
+  object-fit: cover;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .w-64 {
+    width: 12rem;
+  }
+  .p-8 {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+  .w-64 {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .h-screen {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .p-8 {
+    padding: 1rem;
+  }
+  .p-4 {
+    padding: 0.5rem;
+  }
+  .mb-4 {
+    margin-bottom: 0.5rem;
+  }
+}

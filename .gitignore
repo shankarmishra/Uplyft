@@ -1,0 +1,17 @@
+# Node modules
+frontend/node_modules/
+# Build output
+frontend/build/
+# Environment variables
+backend/.env
+frontend/.env
+# Python virtual environment
+backend/venv/
+# Python cache
+backend/__pycache__/
+backend/**/*.pyc
+# VSCode settings
+.vscode/
+# OS files
+.DS_Store
+Thumbs.db
